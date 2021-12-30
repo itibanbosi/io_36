@@ -110,7 +110,7 @@ enum LED_wait {
 let io_neo = neopixel.create(DigitalPin.P9, 3, NeoPixelMode.RGB);
 
 
-//% color="#ff4500" weight=94 block="iːo(ｲｰｵ)専用"
+//% color="#ff4500" weight=94 block="iːo(ｲｰｵ)せん用"
 
 namespace newio_blocks {
 
