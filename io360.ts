@@ -113,7 +113,7 @@ let io_neo = neopixel.create(DigitalPin.P9, 3, NeoPixelMode.RGB);
 
 namespace eureka_blocks {
 
-    //% color="#4741f1" weight=89 blockId=eureka_tl_blue block="(複合)青信号 点灯|%mode| ﾎﾟｰﾄ|%pin|" group="2_信号機ユニット"
+    //% color="#4741f1" weight=70 blockId=eureka_tl_blue block="(複合)青信号 点灯|%mode| ﾎﾟｰﾄ|%pin|" group="2_信号機ユニット"
     //% advanced=true
     export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
         switch (pin) {
