@@ -1315,7 +1315,7 @@ namespace newio_blocks {
 
     //% color="#cd853f" weight=80 blockId=neopixel_erace block="ﾌﾙｶﾗｰLEDを全部消す" group="1 iːoネオピクセル"
     export function neopixel_erace_block() {
-        for (let n = 0; n < 2; n++) {
+        for (let n = 0; n < 3; n++) {
             io_neo.setPixelColor(n, neopixel.colors(NeoPixelColors.Black))
         }
         io_neo.show()
