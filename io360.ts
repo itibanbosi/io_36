@@ -1,4 +1,4 @@
-/* Ver3.6 Eureka_IO &　iːo*/
+/* Ver3.7 Eureka_IO &　iːo*/
 
 enum eureka_IO {
     B,
