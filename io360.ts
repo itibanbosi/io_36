@@ -1211,7 +1211,7 @@ namespace eureka_blocks_soro {
 }
 
 
-//% color="#32cd32" weight=90 block="ふく合ﾕﾆｯﾄ"
+//% color="#32cd32" weight=10 block="ふく合ﾕﾆｯﾄ"
 
 namespace eureka_blocks {
 
