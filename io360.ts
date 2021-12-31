@@ -709,8 +709,9 @@ namespace eureka_blocks_soro {
 
     //% color="#ff7b00" weight=32 blockId=eureka_tempDS block="温度ｾﾝｻDS ﾎﾟｰﾄ|%pin|" group="5_単体ユニットセンサー"
     //% advanced=true
-    let DS_temp=0;
+
     export function eureka_tempDS(pin: eureka_IO): number {
+        let DS_temp = 0;
         switch (pin) {
             case eureka_IO.A:
                 DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin0);
