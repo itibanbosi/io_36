@@ -721,12 +721,18 @@ namespace eureka_blocks_soro {
                 return Math.round(DS_temp);
                 break;
             case eureka_IO.B:
-                return Math.round(DS18B20.TemperatureNumber(DS18B20.pin.pin1)
-                );
+                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin1);
+                if (DS_temp > 4000) {
+                    DS_temp = DS_temp - 4096;
+                }
+                return Math.round(DS_temp);
                 break;
             case eureka_IO.C:
-                return Math.round(DS18B20.TemperatureNumber(DS18B20.pin.pin2)
-                );
+                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin2);
+                if (DS_temp > 4000) {
+                    DS_temp = DS_temp - 4096;
+                }
+                return Math.round(DS_temp);
                 break;
         }
     }
