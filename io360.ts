@@ -1,21 +1,21 @@
 /* Ver3.7 Eureka_IO &　iːo*/
 
 enum eureka_IO {
-    B,
     A,
+    B,
     C,
 }
 enum eureka_denki {
-    B,
     A,
+    B,
 }
 enum eureka_tlp {
-    B,
     A,
+    B,
 }
 enum eureka_p1416 {
-    B,
     A,
+    B,
 }
 enum onoff {
     ON,
