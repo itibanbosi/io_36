@@ -717,8 +717,7 @@ namespace eureka_blocks_soro {
                 if (DS_temp > 4000) {
                     DS_temp = DS_temp - 4096;
                 }
-                return Math.round(DS18B20.TemperatureNumber(DS18B20.pin.pin0)
-                );
+                return Math.round(DS_temp);
                 break;
             case eureka_IO.B:
                 return Math.round(DS18B20.TemperatureNumber(DS18B20.pin.pin1)
