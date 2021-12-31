@@ -460,6 +460,36 @@ namespace eureka_blocks_soro {
         }
     }
 
+    //% color="#ff7b00" weight=32 blockId=eureka_tempDS block="温度ｾﾝｻDS ﾎﾟｰﾄ|%pin|" group="温度センサー"
+    //% advanced=true
+
+    export function eureka_tempDS(pin: eureka_IO): number {
+        let DS_temp = 0;
+        switch (pin) {
+            case eureka_IO.A:
+                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin0);
+                if (DS_temp > 4000) {
+                    DS_temp = DS_temp - 4096;
+                }
+                return Math.round(DS_temp);
+                break;
+            case eureka_IO.B:
+                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin1);
+                if (DS_temp > 4000) {
+                    DS_temp = DS_temp - 4096;
+                }
+                return Math.round(DS_temp);
+                break;
+            case eureka_IO.C:
+                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin2);
+                if (DS_temp > 4000) {
+                    DS_temp = DS_temp - 4096;
+                }
+                return Math.round(DS_temp);
+                break;
+        }
+    }
+
 
     //% color="#6041f1"  weight=60 blockId=eureka_L9110 block="ﾓｰﾀｰﾌｧﾝL |%mode| ﾎﾟｰﾄ|%pin|" group="4_ユーレカ装置"
     //% advanced=true
@@ -707,35 +737,6 @@ namespace eureka_blocks_soro {
         }
     }
 
-    //% color="#ff7b00" weight=32 blockId=eureka_tempDS block="温度ｾﾝｻDS ﾎﾟｰﾄ|%pin|" group="5_単体ユニットセンサー"
-    //% advanced=true
-
-    export function eureka_tempDS(pin: eureka_IO): number {
-        let DS_temp = 0;
-        switch (pin) {
-            case eureka_IO.A:
-                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin0);
-                if (DS_temp > 4000) {
-                    DS_temp = DS_temp - 4096;
-                }
-                return Math.round(DS_temp);
-                break;
-            case eureka_IO.B:
-                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin1);
-                if (DS_temp > 4000) {
-                    DS_temp = DS_temp - 4096;
-                }
-                return Math.round(DS_temp);
-                break;
-            case eureka_IO.C:
-                DS_temp = DS18B20.TemperatureNumber(DS18B20.pin.pin2);
-                if (DS_temp > 4000) {
-                    DS_temp = DS_temp - 4096;
-                }
-                return Math.round(DS_temp);
-                break;
-        }
-    }
 
 
 
