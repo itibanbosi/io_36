@@ -461,8 +461,6 @@ namespace eureka_blocks_soro {
     }
 
     //% color="#ff7b00" weight=32 blockId=eureka_tempDS block="温度ｾﾝｻDS ﾎﾟｰﾄ|%pin|" group="温度センサー"
-    //% advanced=true
-
     export function eureka_tempDS(pin: eureka_IO): number {
         let DS_temp = 0;
         switch (pin) {
@@ -931,7 +929,7 @@ namespace eureka_blocks_soro {
     }
 
     //% color="#ff7b00" weight=54 blockId=eureka_white block="単体LED |%mode| ﾎﾟｰﾄ|%pin|" group="たん体ＬＥＤ"
-
+    //% advanced=true
     export function eureka_white(mode: onoff, port: eureka_IO) {
         switch (port) {
             case eureka_IO.A:
@@ -959,6 +957,7 @@ namespace eureka_blocks_soro {
 
 
     //% color="#ff7b00" weight=17 blockId=eureka_whiteselect block="単体LED |%mode| 時間|%LED_time|秒 ﾎﾟｰﾄ|%pin|" group="たん体ＬＥＤ"
+    //% advanced=true
     export function eureka_whiteselect(mode: onoff, LED_time: LED_wait, port: eureka_IO) {
         switch (port) {
             case eureka_IO.A:
@@ -997,6 +996,7 @@ namespace eureka_blocks_soro {
 
 
     //% color="#ff7b00" weight=17 blockId=eureka_white2 block="単体LED　点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="たん体ＬＥＤ"
+    //% advanced=true
     export function eureka_white2(mode: LED_onoff, port: eureka_IO) {
         switch (port) {
             case eureka_IO.A:
@@ -1037,6 +1037,7 @@ namespace eureka_blocks_soro {
 
 
     //% color="#858585" weight=54 blockId=eureka_fullcolor block="ＬＥＤ |%color|色で点めつは|%mode| ﾎﾟｰﾄ|%pin|" group="フルカラーＬＥＤ"
+    //% advanced=true
     export function eureka_fullcolor(color: LED_color, mode: LED_onoff, pin: eureka_tlp) {
         switch (color) {
             case LED_color.赤:
@@ -1146,6 +1147,7 @@ namespace eureka_blocks_soro {
     }
 
     //% color="#4741f1" weight=53 blockId=eureka_full_blue block="青 点とう|%mode| ﾎﾟｰﾄ|%pin|" group="フルカラーＬＥＤ"
+    //% advanced=true
     export function eureka_full_blue(mode: onoff, pin: eureka_tlp) {
         switch (pin) {
             case eureka_tlp.A:
@@ -1164,6 +1166,7 @@ namespace eureka_blocks_soro {
     }
 
     //% color="#32cd32" weight=52 blockId=eureka_full_green block="みどり 点とう|%mode| ﾎﾟｰﾄ|%pin|" group="フルカラーＬＥＤ"
+    //% advanced=true
     export function eureka_full_green(mode: onoff, pin: eureka_tlp) {
         switch (pin) {
             case eureka_tlp.A:
@@ -1182,6 +1185,7 @@ namespace eureka_blocks_soro {
     }
 
     //% color="#ff4940" weight=51 blockId=eureka_full_red block="赤 点とう|%mode| ﾎﾟｰﾄ|%pin|" group="フルカラーＬＥＤ"
+    //% advanced=true
     export function eureka_full_red(mode: onoff, pin: eureka_tlp) {
         switch (pin) {
             case eureka_tlp.A:
