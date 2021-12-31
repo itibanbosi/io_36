@@ -332,7 +332,7 @@ namespace newio_blocks {
 
 
 
-//% color="#0000ff" weight=93 block="たん体ﾕﾆｯﾄ" 
+//% color="#0000ff" weight=13 block="たん体ﾕﾆｯﾄ" 
 namespace eureka_blocks_soro {
 
     //% color="#4169e1" weight=50 blockId=eureka_O2check block="酸素センサー電池チェック ﾎﾟｰﾄ|%pin|" group="酸素センサー"
